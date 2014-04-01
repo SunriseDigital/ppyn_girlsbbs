@@ -619,11 +619,6 @@ td.bbp-topic-counts {
 	padding: 5px;
 }
 
-#bbpress-forums fieldset.bbp-form .bbp_anonymous_email_custom,
-#bbpress-forums fieldset.bbp-form .bbp_anonymous_website_custom {
-	display: none;
-}
-
 #bbpress-forums fieldset.bbp-form label {
 	margin: 0;
 	display: inline-block;

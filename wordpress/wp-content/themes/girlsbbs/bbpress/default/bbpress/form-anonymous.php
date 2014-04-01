@@ -23,12 +23,12 @@
 			<input type="text" id="bbp_anonymous_author"  value="<?php bbp_author_display_name(); ?>" tabindex="<?php bbp_tab_index(); ?>" size="40" name="bbp_anonymous_name" />
 		</p>
 
-		<p class="bbp_anonymous_email_custom">
+		<p>
 			<label for="bbp_anonymous_email"><?php _e( 'Mail (will not be published) (required):', 'bbpress' ); ?></label><br />
-			<input type="text" id="bbp_anonymous_email"   value="aaa@gmail.com" tabindex="<?php bbp_tab_index(); ?>" size="40" name="bbp_anonymous_email" />
+			<input type="text" id="bbp_anonymous_email"   value="<?php bbp_author_email(); ?>" tabindex="<?php bbp_tab_index(); ?>" size="40" name="bbp_anonymous_email" />
 		</p>
 
-		<p class="bbp_anonymous_website_custom">
+		<p>
 			<label for="bbp_anonymous_website"><?php _e( 'Website:', 'bbpress' ); ?></label><br />
 			<input type="text" id="bbp_anonymous_website" value="<?php bbp_author_url(); ?>" tabindex="<?php bbp_tab_index(); ?>" size="40" name="bbp_anonymous_website" />
 		</p>
