@@ -5,8 +5,9 @@
      <title><?php bloginfo('name'); ?> <?php if ( is_single() ) { ?> &raquo; Blog Archive <?php } ?> <?php wp_title(); ?></title>
      <link rel="alternate" type="application/rss+xml" title="<?php bloginfo('name'); ?> RSSフィード" href="<?php bloginfo('rss2_url'); ?>">
  
-     <meta name="description" content="WordPress 3.0用の無料テーマです。">
-     <meta name="keywords" content="WordPress 無料 テーマ, WordPress テーマ, WordPress 3.0 テーマ, WordPress テンプレート, WordPress 無料テンプレート">
+     <meta name="description" content="">
+     <meta name="keywords" content="">
+     <meta name="viewport" content="width=device-width,initial-scale=1.0" />
 
 <!-- External files -->
      <link rel="stylesheet" href="<?php bloginfo( 'stylesheet_url' ); ?>">
@@ -27,7 +28,13 @@
                     <?php else: // ホーム以外のページが表示されている場合は H1 を削除。各記事やページのタイトルに H1 を使用 ?>
                          <a href="<?php bloginfo('url'); ?>" class="blog_title"><?php bloginfo('name'); ?></a>
                     <?php endif; ?>
-                   
-                    <p><?php bloginfo('description'); ?></p>
+
+                    <?php bloginfo('description'); //現在使ってなので非表示にしてます。?>
+                         <?php if (!array_key_exists(topic, $_GET) && $_GET["page_id"] != 60): //トピック単体・トピック作成ページはリンクなしにしてます。?>
+                              <p class="create-topic">
+                                   <a href="http://board.s502.xrea.com/?page_id=60">トピックを投稿する</a>
+                              </p>
+                    <?php endif; ?>
+
                <?php wp_nav_menu( array('menu_id' => 'nav' )); ?>
                </div><!-- /#header -->

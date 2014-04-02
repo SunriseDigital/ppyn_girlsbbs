@@ -7,5 +7,81 @@ Author: ppyn
 Author URI: xxx
 */
 
+/************************
+reset
+************************/
+body {
+	font-family:Helvetica, Arial, 'Hiragino Kaku Gothic ProN', 'ヒラギノ角ゴ ProN W3', Meiryo, メイリオ, sans-serif;
+	font-size: 13px;
+	margin: 0;
+}
 
+ul {
+	padding: 0;
+	list-style: none;
+}
+
+a {
+	text-decoration: none;
+}
+
+/************************
+header
+************************/
+#header {
+	position: relative;
+	background-color: #FFB4BA;
+}
+
+.blog_title {
+	display: block;
+	padding: 15px 15px 15px 15px;
+	color: #FFF;
+	font-size: 200%;
+	font-weight: bold;
+}
+
+.create-topic {
+	position: absolute;
+	top: 5px;
+	right: 10px;
+	padding: 5px;
+	background-color: #FFF;
+	border-radius: 3px;
+	border: 1px solid #FFF;
+}
+
+/*フォーラムしか置かないので表示させない*/
+.menu {
+	display: none;
+}
+
+.menu > ul {
+	display: -webkit-box;
+	display: -moz-box;
+	display: box;
+}
+
+.menu > ul li {
+	-webkit-box-flex: 1;
+	-moz-box-flex: 1;
+	box-flex: 1;
+	width: 100%;
+	padding: 10px;
+	border: 1px solid #FFF;
+}
+
+/************************
+h1
+************************/
+.entry-title {
+
+}
+
+/************************
+footer
+************************/
+#footer {
+	padding: 15px;
+}
 
