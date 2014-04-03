@@ -27,7 +27,7 @@
 
 #bbpress-forums div.odd,
 #bbpress-forums ul.odd {
-	background-color: #fbfbfb;
+/*	background-color: #fbfbfb;*/
 }
 
 body.reply-edit .reply {
@@ -42,7 +42,7 @@ body.reply-edit .reply {
 #bbpress-forums div.bbp-forum-header,
 #bbpress-forums div.bbp-topic-header,
 #bbpress-forums div.bbp-reply-header {
-	background-color: #FFECEC;
+/*	background-color: #FFECEC;*/
 }
 
 #bbpress-forums .status-trash.even,
@@ -83,7 +83,7 @@ body.reply-edit .reply {
 #bbpress-forums ul.bbp-search-results {
 	font-size: 15px;
 	overflow: hidden;
-	border: 1px solid #eee;
+/*	border: 1px solid #eee;*/
 	margin-bottom: 20px;
 	clear: both;
 }
@@ -97,7 +97,7 @@ body.reply-edit .reply {
 #bbpress-forums li.bbp-header,
 #bbpress-forums li.bbp-footer {
 	background: #ffffff;
-	border-top: 1px solid #eee;
+/*	border-top: 1px solid #eee;*/
 	font-weight: bold;
 	padding: 8px;
 	text-align: center;
@@ -131,7 +131,7 @@ li.bbp-forum-info,
 li.bbp-topic-title {
 	float: left;
 	text-align: left;
-	width: 75%;
+	/*width: 75%;*/
 }
 li.bbp-forum-topic-count,
 li.bbp-topic-voice-count,
@@ -151,7 +151,7 @@ li.bbp-topic-freshness {
 
 #bbpress-forums li.bbp-body ul.forum,
 #bbpress-forums li.bbp-body ul.topic {
-	border-top: 1px solid #eee;
+	border-bottom: 1px dashed #FFB3B9;
 	overflow: hidden;
 	padding: 30px;
 }
@@ -253,7 +253,7 @@ li.bbp-body div.hentry {
 div.bbp-forum-header,
 div.bbp-topic-header,
 div.bbp-reply-header {
-	border-top: 1px solid #ddd;
+	border-top: 1px dashed #FF596A;
 	clear: both;
 }
 
@@ -404,6 +404,7 @@ span.bbp-author-ip {
 -------------------------------------------------------------- */
 
 div.bbp-breadcrumb {
+	display: none;
 	float: left;
 }
 
@@ -1176,13 +1177,13 @@ body.my-account #bbpress-forums {
 	}
 	li.bbp-forum-info,
 	li.bbp-topic-title {
-		width: 45%;
+		/*width: 45%;*/
 	}
 	li.bbp-forum-topic-count,
 	li.bbp-forum-reply-count,
 	li.bbp-topic-voice-count,
 	li.bbp-topic-reply-count {
-		width: 15%;
+		/*width: 15%;*/
 	}
 	span.bbp-reply-post-date {
 		float: left;
@@ -1372,5 +1373,9 @@ body.my-account #bbpress-forums {
 /* 追加分
 -------------------------------------------------------------- */
 #bbp-container {
+	max-width: 920px;
+	margin: 15px auto 0;
 	padding: 15px;
+	border: 1px solid #E2E2E2;
+	background-color: #FFF;
 }

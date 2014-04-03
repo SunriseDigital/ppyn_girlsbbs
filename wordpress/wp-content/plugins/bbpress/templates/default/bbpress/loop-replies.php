@@ -13,9 +13,9 @@
 
 <ul id="topic-<?php bbp_topic_id(); ?>-replies" class="forums bbp-replies">
 
-	<li class="bbp-header">
+<!-- 	<li class="bbp-header">
 
-		<div class="bbp-reply-author"><?php  _e( 'Author',  'bbpress' ); ?></div><!-- .bbp-reply-author -->
+		<div class="bbp-reply-author"><?php  _e( 'Author',  'bbpress' ); ?></div>
 
 		<div class="bbp-reply-content">
 
@@ -33,9 +33,9 @@
 
 			<?php endif; ?>
 
-		</div><!-- .bbp-reply-content -->
+		</div>
 
-	</li><!-- .bbp-header -->
+	</li> -->
 
 	<li class="bbp-body">
 
@@ -55,7 +55,7 @@
 
 	</li><!-- .bbp-body -->
 
-	<li class="bbp-footer">
+<!-- 	<li class="bbp-footer">
 
 		<div class="bbp-reply-author"><?php  _e( 'Author',  'bbpress' ); ?></div>
 
@@ -71,9 +71,9 @@
 
 			<?php endif; ?>
 
-		</div><!-- .bbp-reply-content -->
+		</div>
 
-	</li><!-- .bbp-footer -->
+	</li> -->
 
 </ul><!-- #topic-<?php bbp_topic_id(); ?>-replies -->
 

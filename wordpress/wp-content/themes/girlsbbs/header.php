@@ -14,7 +14,14 @@
 
 <!-- Favicon, Thumbnail image -->
      <link rel="shortcut icon" href="<?php bloginfo('template_url'); ?>/images/favicon.ico">
+
+<?php
+wp_deregister_script('jquery');
+wp_enqueue_script('jquery', 'http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js', array(), '1.11.0');
+?>
+
 <?php wp_head(); ?>
+
 </head>
 
 <body <?php body_class(); ?>>
@@ -23,18 +30,20 @@
 
 <!-- Header -->         
                <div id="header">
-                    <?php if(is_home()): // ホームが表示されている場合、ブログタイトルを H1 で表示 ?>
-                         <h1><a href="<?php bloginfo('url'); ?>" class="blog_title"><?php bloginfo('name'); ?></a></h1>
-                    <?php else: // ホーム以外のページが表示されている場合は H1 を削除。各記事やページのタイトルに H1 を使用 ?>
-                         <a href="<?php bloginfo('url'); ?>" class="blog_title"><?php bloginfo('name'); ?></a>
-                    <?php endif; ?>
+                    <div class="header-wrap">
+                         <?php if(is_home()): // ホームが表示されている場合、ブログタイトルを H1 で表示 ?>
+                              <h1><a href="<?php bloginfo('url'); ?>" class="blog_title"><?php bloginfo('name'); ?></a></h1>
+                         <?php else: // ホーム以外のページが表示されている場合は H1 を削除。各記事やページのタイトルに H1 を使用 ?>
+                              <a href="<?php bloginfo('url'); ?>" class="blog_title"><?php bloginfo('name'); ?></a>
+                         <?php endif; ?>
 
-                    <?php bloginfo('description'); //現在使ってなので非表示にしてます。?>
-                         <?php if (!array_key_exists(topic, $_GET) && $_GET["page_id"] != 60): //トピック単体・トピック作成ページはリンクなしにしてます。?>
-                              <p class="create-topic">
-                                   <a href="http://board.s502.xrea.com/?page_id=60">トピックを投稿する</a>
-                              </p>
-                    <?php endif; ?>
+                         <?php bloginfo('description'); //現在使ってなので非表示にしてます。?>
+                              <?php if (!array_key_exists(topic, $_GET) && $_GET["page_id"] != 60): //トピック単体・トピック作成ページはリンクなしにしてます。?>
+                                   <p class="create-topic">
+                                        <a href="http://board.s502.xrea.com/?page_id=60">トピックを投稿する</a>
+                                   </p>
+                         <?php endif; ?>
 
-               <?php wp_nav_menu( array('menu_id' => 'nav' )); ?>
+                    <?php wp_nav_menu( array('menu_id' => 'nav' )); ?>
+                    </div>
                </div><!-- /#header -->

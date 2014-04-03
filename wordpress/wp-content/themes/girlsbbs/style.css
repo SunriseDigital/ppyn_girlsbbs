@@ -14,6 +14,8 @@ body {
 	font-family:Helvetica, Arial, 'Hiragino Kaku Gothic ProN', 'ヒラギノ角ゴ ProN W3', Meiryo, メイリオ, sans-serif;
 	font-size: 13px;
 	margin: 0;
+	background: url(/wordpress/wp-content/themes/girlsbbs/img/pakuri_contents_base.png) 0 0 repeat;
+}
 }
 
 ul {
@@ -29,8 +31,13 @@ a {
 header
 ************************/
 #header {
-	position: relative;
 	background-color: #FFB4BA;
+}
+
+.header-wrap {
+	position: relative;
+	margin: 0 auto;
+	max-width: 950px;
 }
 
 .blog_title {
@@ -82,6 +89,8 @@ h1
 footer
 ************************/
 #footer {
+	margin: 0 auto;
+	max-width: 950px;
 	padding: 15px;
 }
 
