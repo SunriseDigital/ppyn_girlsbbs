@@ -14,8 +14,7 @@ body {
 	font-family:Helvetica, Arial, 'Hiragino Kaku Gothic ProN', 'ヒラギノ角ゴ ProN W3', Meiryo, メイリオ, sans-serif;
 	font-size: 13px;
 	margin: 0;
-	background: url(/wordpress/wp-content/themes/girlsbbs/img/pakuri_contents_base.png) 0 0 repeat;
-}
+	background: #fff0f0;
 }
 
 ul {
@@ -31,33 +30,91 @@ a {
 header
 ************************/
 #header {
-	background-color: #FFB4BA;
+	border-top: 10px solid #ff7b81;
+	background-color: #333333;
 }
 
 .header-wrap {
 	position: relative;
 	margin: 0 auto;
+	padding: 10px 0 0;
 	max-width: 950px;
 }
 
 .blog_title {
 	display: block;
-	padding: 15px 15px 15px 15px;
-	color: #FFF;
-	font-size: 200%;
-	font-weight: bold;
+	width: 458px;
+	height: 57px;
+	background: url(/wordpress/wp-content/themes/girlsbbs/img/com_logo01.png) 0 0 no-repeat;
+	text-indent: -9999px;
 }
-
-.create-topic {
+/* searchBox */
+#searchBox {
+	position: relative;
+	max-width: 950px;
+	margin: 15px auto 0;
+}
+#searchBox form {
 	position: absolute;
-	top: 5px;
-	right: 10px;
-	padding: 5px;
-	background-color: #FFF;
-	border-radius: 3px;
-	border: 1px solid #FFF;
+	top: -67px;
+	right: 0;
+	border: 1px solid #cccccc;
+	background-color: #ffffff;
+	border-radius: 25px;
 }
-
+#searchBox form div {
+	padding: 0 15px 0 23px;
+}
+#searchBox form div .hidden {
+	display: none;
+}
+#searchBox form #bbp_search_submit {
+	float: right;
+	display: block;
+	width: 23px;
+	height: 33px;
+	margin: 0;
+	padding: 0;
+	border: none;
+	background: url(/wordpress/wp-content/themes/girlsbbs/img/com_bt01.png) 0 50% no-repeat;
+	text-indent: -9999px;
+	cursor: pointer;
+}
+#searchBox form #bbp_search {
+	float: left;
+	width: 310px;
+	margin: 0;
+	padding: 9px 0;
+	border: 1px solid #ffffff;
+}
+/* entryBox */
+#entryBox {
+	max-width: 550px;
+	margin: 15px auto 0;
+}
+#entryBox .create-topic {
+	margin: 0 10px;
+	background-color: #ff739a;
+	border-radius: 25px;
+}
+#entryBox .create-topic a {
+	display: block;
+	padding: 10px;
+	color: #ffffff;
+	font-weight: bold;
+	font-size: 20px;
+	text-align:center;
+}
+#entryBox .create-topic a:before {
+	content: "";
+	padding: 0 12px 0 12px;
+	background: url(/wordpress/wp-content/themes/girlsbbs/img/com_ic01.png) 50% 50% no-repeat;
+}
+#entryBox .create-topic a:after {
+	content: "";
+	padding: 0 12px 0 12px;
+	background: url(/wordpress/wp-content/themes/girlsbbs/img/com_ic01.png) 50% 50% no-repeat;
+}
 /*フォーラムしか置かないので表示させない*/
 .menu {
 	display: none;
@@ -89,8 +146,75 @@ h1
 footer
 ************************/
 #footer {
+	padding: 25px 0 10px;
+	border-bottom: 10px solid #333333;
+	background-color: #ff739a;
+}
+.footer-wrap {
+	width: 950px;
 	margin: 0 auto;
-	max-width: 950px;
-	padding: 15px;
+}
+.footer_blog_title {
+	display: block;
+	width: 195px;
+	height: 48px;
+	background: url(/wordpress/wp-content/themes/girlsbbs/img/com_logo02.png) 0 0 no-repeat;
+	text-indent: -9999px;
+}
+.footer_menu {
+	float: left;
+	margin: 10px 0 0;
+}
+.footer_menu li {
+	float: left;
+	margin-right: 7px;
+	padding-right: 7px;
+	border-right: 1px solid #ffffff;
+	line-height: 1.1;
+}
+.footer_menu li:last-child {
+	margin-right: 0;
+	padding-right: 0;
+	border-right: none;
+}
+.footer_menu li a {
+	color: #ffffff;
+}
+.copy {
+	float: right;
+	line-height: 1.1;
+	margin: 10px 0 0;
+	color: #333333;
+}
+.copy a {
+	color: #333333;
+	text-decoration: underline;
+}
+/* =========================================================
+	Clearfix
+========================================================= */
+.footer_menu:after,
+.footer-wrap:after,
+#searchBox form div:after {
+	display: block;
+	clear: both;
+	height: 0;
+	visibility: hidden;
+	content: ".";
+	font-size: 0;
+	line-height: 0;
 }
 
+.footer_menu,
+.footer-wrap,
+#searchBox form div {
+	display:block;
+	zoom:1;
+}
+
+/* for IE7 */
+*:first-child+html .footer_menu,
+*:first-child+html .footer-wrap,
+*:first-child+html #searchBox form div {
+	display:inline-table;
+}

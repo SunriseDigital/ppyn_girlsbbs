@@ -11,7 +11,7 @@
 
 <div id="bbpress-forums">
 
-	<?php if ( bbp_allow_search() ) : ?>
+	<!--<?php if ( bbp_allow_search() ) : ?>
 
 		<div class="bbp-search-form">
 
@@ -19,7 +19,7 @@
 
 		</div>
 
-	<?php endif; ?>
+	<?php endif; ?>-->
 
 	<?php bbp_breadcrumb(); ?>
 
