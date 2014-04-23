@@ -139,12 +139,37 @@ header
 h1
 ************************/
 .entry-title {
-
+	margin: 0 0 15px;
+	padding: 15px;
+	border-radius: 6px 6px 0 0;
+	background: #666666;
+	line-height: 1.1;
+	font-size: 22px;
+	color: #ffc9c9;
 }
 
+#bbpress-forums ul.bbp-topics {
+	border-radius: 6px;
+}
 /************************
 footer
 ************************/
+#footer-pagetop {
+	width: 950px;
+	margin: 0 auto;
+	text-align: right;
+}
+#footer-pagetop a {
+	display: inline-block;
+	padding: 10px 15px 10px 39px;
+	border-bottom: 2px dotted #ff9db8;
+	border-radius: 4px 4px 0 0;
+	background: url(/wordpress/wp-content/themes/girlsbbs/img/com_ic03.png) 19px 50% no-repeat #ff739a;
+	line-height: 1.1;
+	font-size: 15px;
+	font-weight: bold;
+	color: #ffffff;
+}
 #footer {
 	padding: 25px 0 10px;
 	border-bottom: 10px solid #333333;

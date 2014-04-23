@@ -1,7 +1,8 @@
 				<br class="clear">
 			</div><!-- /#contents -->
 			
-<!-- Footer -->			
+<!-- Footer -->
+			<p id="footer-pagetop"><a href="#header">&#12371;&#12398;&#12506;&#12540;&#12472;&#12398;&#20808;&#38957;&#12408;</a></p>
 			<div id="footer">
 				<div class="footer-wrap">
 					<a href="<?php bloginfo('url'); ?>" class="footer_blog_title"><?php bloginfo('name'); ?></a>
