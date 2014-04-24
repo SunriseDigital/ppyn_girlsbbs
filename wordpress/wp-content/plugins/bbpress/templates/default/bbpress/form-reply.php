@@ -10,13 +10,18 @@
 ?>
 
 <?php if ( bbp_is_reply_edit() ) : ?>
-
 <div id="bbpress-forums">
 
 	<?php bbp_breadcrumb(); ?>
 
 <?php endif; ?>
-
+<script type='text/javascript'>
+(function($){
+	$(function(){
+		$('#bbp-content').addClass('reply-wrap');
+	});
+})(jQuery);
+</script>
 <?php if ( bbp_current_user_can_access_create_reply_form() ) : ?>
 
 	<div id="new-reply-<?php bbp_topic_id(); ?>" class="bbp-reply-form">
@@ -51,6 +56,7 @@
 				<div>
 
 					<?php bbp_get_template_part( 'form', 'anonymous' ); ?>
+					<label>本文：<span class="ic_must">必須</span></label><br />
 
 					<?php do_action( 'bbp_theme_before_reply_form_content' ); ?>
 
@@ -66,7 +72,7 @@
 						</p>
 
 					<?php endif; ?>
-<div class="hide-box-adjust"><!-- �\�������Ȃ��G���A// -->
+<div class="hide-box-adjust"><!-- 表示させないエリア// -->
 					<?php if ( bbp_allow_topic_tags() && current_user_can( 'assign_topic_tags' ) ) : ?>
 						<?php do_action( 'bbp_theme_before_reply_form_tags' ); ?>
 						<p>
@@ -87,7 +93,7 @@
 						</p>
 						<?php do_action( 'bbp_theme_after_reply_form_subscription' ); ?>
 					<?php endif; ?>
-</div><!-- //�\�������Ȃ��G���A -->
+</div><!-- //表示させないエリア -->
 					<?php if ( bbp_allow_revisions() && bbp_is_reply_edit() ) : ?>
 
 						<?php do_action( 'bbp_theme_before_reply_form_revisions' ); ?>
@@ -116,8 +122,8 @@
 
 						<?php bbp_cancel_reply_to_link(); ?>
 
-						<button type="submit" tabindex="<?php bbp_tab_index(); ?>" id="bbp_reply_submit" name="bbp_reply_submit" class="button submit"><?php _e( 'Submit', 'bbpress' ); ?></button>
-
+						<button type="submit" tabindex="<?php bbp_tab_index(); ?>" id="bbp_reply_submit" name="bbp_reply_submit" class="button submit">コメントを投稿する</button>
+						<span class="inputStatus"></span>
 						<?php do_action( 'bbp_theme_after_reply_form_submit_button' ); ?>
 
 					</div>
@@ -134,7 +140,41 @@
 
 		</form>
 	</div>
-
+<script type='text/javascript'>
+(function($){
+	$(function(){
+		$('a.bbp-reply-to-link , a.bbp-topic-reply-link').text('コメントを投稿する');
+		//名前入力のlabelを変更
+		$('#bbp_anonymous_author').prev('br').prev('label').html('名前：<span class="ic_option">変更可能</span>');
+		//名前入力のデフォルト値を変更
+		var defaultName = '匿名女子';
+		$('#bbp_anonymous_author').val(defaultName);
+		$('#bbp_anonymous_author').focus(function(){
+			if(this.value == defaultName){
+				$(this).val('');
+			}
+		})
+		.blur(function(){
+			if($(this).val() == ''){
+				$(this).val(defaultName);
+			}
+		});
+		//投稿ボタンの調整
+		var defaultText = '※「本文」を入力してね';
+		$('#bbp_reply_submit').addClass('disabled').attr("disabled", "disabled");
+		$('span.inputStatus').text(defaultText);
+		$('#bbp_reply_content').bind('keydown keyup keypress change',function(){
+			if($('#bbp_reply_content').val() != ''){
+				$('#bbp_reply_submit').removeClass('disabled').removeAttr("disabled");
+				$('span.inputStatus').text('');
+			} else {
+				$('#bbp_reply_submit').addClass('disabled').attr("disabled", "disabled");
+				$('span.inputStatus').text(defaultText);
+			}
+		});
+	});
+})(jQuery);
+</script>
 <?php elseif ( bbp_is_topic_closed() ) : ?>
 
 	<div id="no-reply-<?php bbp_topic_id(); ?>" class="bbp-no-reply">
@@ -166,3 +206,16 @@
 </div>
 
 <?php endif; ?>
+<script type='text/javascript'>
+(function($){
+	//コメント投稿先：…を追加
+	$(function(){
+		var title_text = $('h1.entry-title').text();
+		$('#new-post > .bbp-form').prepend('<h3 class="added-reply-title">コメント投稿先：'+ title_text +'</h3>');
+	});
+	//トップページへ戻るを追加
+	$(function(){
+		$('#wrapper').append('<p class="back-to-top"><a href="/">トップページへ戻る</a></p>');
+	});
+})(jQuery);
+</script>

@@ -15,6 +15,7 @@ body {
 	font-size: 13px;
 	margin: 0;
 	background: #fff0f0;
+	color: #666666;
 }
 
 ul {
@@ -140,9 +141,9 @@ h1
 ************************/
 .entry-title {
 	margin: 0 0 15px;
-	padding: 15px;
+	padding: 15px 15px 15px 58px;
+	background: url(/wordpress/wp-content/themes/girlsbbs/img/com_ic02.png) 14px 50% no-repeat #666666;
 	border-radius: 6px 6px 0 0;
-	background: #666666;
 	line-height: 1.1;
 	font-size: 22px;
 	color: #ffc9c9;

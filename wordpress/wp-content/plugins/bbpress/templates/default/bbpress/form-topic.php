@@ -195,7 +195,19 @@
 <script type='text/javascript'>
 (function($){
 	$(function(){
-		//投稿ボタンの調整を変更
+		//投稿ボタンの調整
+		var defaultText = '※「タイトル」と「本文」は必ず入力してね';
+		$('#bbp_topic_submit').addClass('disabled').attr("disabled", "disabled");
+		$('span.inputStatus').text(defaultText);
+		$('#bbp_topic_title , #bbp_topic_content').bind('keydown keyup keypress change',function(){
+			if($('#bbp_topic_title').val() != '' && $('#bbp_topic_content').val() != ''){
+				$('#bbp_topic_submit').removeClass('disabled').removeAttr("disabled");
+				$('span.inputStatus').text('');
+			} else {
+				$('#bbp_topic_submit').addClass('disabled').attr("disabled", "disabled");
+				$('span.inputStatus').text(defaultText);
+			}
+		});
 	});
 })(jQuery);
 </script>
