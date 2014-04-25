@@ -16,7 +16,6 @@
 	background: transparent;
 	clear: both;
 	margin-bottom: 20px;
-	overflow: hidden;
 	font-size: 12px;
 }
 
@@ -98,6 +97,22 @@ body.reply-edit .reply {
 	margin-bottom: 20px;
 	clear: both;
 }
+/* 各デザイス */
+@media (min-width: 1200px) {
+}
+@media (max-width: 1199px) and (min-width: 992px) {
+}
+@media (max-width: 991px) and (min-width: 768px) {
+}
+@media (max-width: 767px) {
+#bbpress-forums ul.bbp-lead-topic,
+#bbpress-forums ul.bbp-topics,
+#bbpress-forums ul.bbp-forums,
+#bbpress-forums ul.bbp-replies,
+#bbpress-forums ul.bbp-search-results {
+	font-size: 12px;
+}
+}
 #bbp-content.reply-wrap ul.bbp-replies {
 	margin-bottom: 0;
 }
@@ -121,14 +136,44 @@ body.reply-edit .reply {
 	padding: 15px 15px 15px 58px;
 	background: url(/wordpress/wp-content/themes/girlsbbs/img/com_ic02.png) 14px 50% no-repeat #666666;
 }
-
+/* 各デザイス */
+@media (min-width: 1200px) {
+}
+@media (max-width: 1199px) and (min-width: 992px) {
+}
+@media (max-width: 991px) and (min-width: 768px) {
+}
+@media (max-width: 767px) {
+#bbpress-forums li.bbp-header {
+	padding: 8px 8px 8px 35px;
+	background-position: 8px 50%;
+	-webkit-background-size: 23px 18px;
+	-moz-background-size: 23px 18px;
+	background-size: 23px 18px;
+}
+}
 #bbpress-forums li.bbp-header ul {
 	overflow: hidden;
 	line-height: 1.1;
 	font-size: 22px;
 	color: #ffc9c9;
 }
-
+/* 各デザイス */
+@media (min-width: 1200px) {
+}
+@media (max-width: 1199px) and (min-width: 992px) {
+}
+@media (max-width: 991px) and (min-width: 768px) {
+}
+@media (max-width: 767px) {
+#bbpress-forums li.bbp-header ul {
+	font-size: 16px;
+}
+#bbpress-forums li.bbp-header ul .bbp-topic-title,
+#bbpress-forums li.bbp-header ul .forum-titles {
+	text-align: left !important;
+}
+}
 #bbpress-forums .bbp-forums-list {
 	margin: 0 0 0 5px;
 	padding-left: 15px;
@@ -172,6 +217,19 @@ li.bbp-topic-freshness {
 	border-bottom: 2px dotted #b2b2b2;
 	overflow: hidden;
 	padding: 15px 20px;
+}
+/* 各デザイス */
+@media (min-width: 1200px) {
+}
+@media (max-width: 1199px) and (min-width: 992px) {
+}
+@media (max-width: 991px) and (min-width: 768px) {
+}
+@media (max-width: 767px) {
+#bbpress-forums li.bbp-body ul.forum,
+#bbpress-forums li.bbp-body ul.topic {
+	padding: 8px;
+}
 }
 #bbpress-forums li.bbp-body ul.topic:nth-child(even) {
 	background-color: #f7f7f7;
@@ -725,7 +783,18 @@ td.bbp-topic-counts {
 	padding: 5px 10px;
 	border: 1px solid #b2b2b2;
 }
-
+/* 各デザイス */
+@media (min-width: 1200px) {
+}
+@media (max-width: 1199px) and (min-width: 992px) {
+}
+@media (max-width: 991px) and (min-width: 768px) {
+}
+@media (max-width: 767px) {
+#bbpress-forums fieldset.bbp-form input {
+	padding: 5px 5px;
+}
+}
 textarea#bbp_reply_content,
 textarea#bbp_topic_content,
 textarea#bbp_forum_content {
@@ -1309,7 +1378,8 @@ body.my-account #bbpress-forums {
 		float: left;
 	}
 	#bbpress-forums fieldset.bbp-form {
-		padding: 0 10px 10px;
+		margin: 0 10px 10px;
+		padding: 0;
 	}
 	#bbpress-forums #bbp-user-body {
 		clear: both;
@@ -1317,134 +1387,6 @@ body.my-account #bbpress-forums {
 		word-wrap: break-word;
 	}
 }
-
-/* =Standard Mobile Portrait
--------------------------------------------------------------- */
-@media only screen and (max-width: 320px) {
-	#bbpress-forums div.bbp-search-form {
-		margin-bottom: 10px;
-	}
-	#bbpress-forums li.bbp-header li.bbp-forum-info,
-	#bbpress-forums li.bbp-body li.bbp-forum-info,
-	#bbpress-forums li.bbp-header li.bbp-topic-title,
-	#bbpress-forums li.bbp-body li.bbp-topic-title {
-		width: 100%;
-	}
-	#bbpress-forums li.bbp-header li.bbp-forum-info,
-	#bbpress-forums li.bbp-header li.bbp-topic-title {
-		text-align: center;
-		text-transform: uppercase;
-	}
-	#bbpress-forums li.bbp-header li.bbp-forum-topic-count,
-	#bbpress-forums li.bbp-header li.bbp-forum-reply-count,
-	#bbpress-forums li.bbp-body li.bbp-forum-topic-count,
-	#bbpress-forums li.bbp-body li.bbp-forum-reply-count,
-	#bbpress-forums li.bbp-header li.bbp-topic-voice-count,
-	#bbpress-forums li.bbp-header li.bbp-topic-reply-count,
-	#bbpress-forums li.bbp-body li.bbp-topic-voice-count,
-	#bbpress-forums li.bbp-body li.bbp-topic-reply-count {
-		width: 20%;
-	}
-	#bbpress-forums li.bbp-header li.bbp-forum-freshness,
-	#bbpress-forums li.bbp-body li.bbp-forum-freshness,
-	#bbpress-forums li.bbp-header li.bbp-topic-freshness,
-	#bbpress-forums li.bbp-body li.bbp-topic-freshness {
-		width: 58%;
-	}
-	#bbpress-forums li.bbp-body li.bbp-forum-topic-count,
-	#bbpress-forums li.bbp-body li.bbp-forum-reply-count,
-	#bbpress-forums li.bbp-body li.bbp-forum-freshness,
-	#bbpress-forums li.bbp-body li.bbp-topic-voice-count,
-	#bbpress-forums li.bbp-body li.bbp-topic-reply-count,
-	#bbpress-forums li.bbp-body li.bbp-topic-freshness {
-		margin-top: 7px;
-	}
-	#bbpress-forums li.bbp-header,
-	#bbpress-forums li.bbp-footer {
-		font-size: 10px;
-	}
-	#bbpress-forums li.bbp-header div.bbp-reply-author {
-		text-align: left;
-		width: 25%;
-	}
-	#bbpress-forums li.bbp-header div.bbp-reply-content {
-		margin-left: 25%;
-	}
-	#bbpress-forums div.bbp-template-notice img.avatar,
-	#bbpress-forums p.bbp-topic-meta img.avatar {
-		width: 14px;
-		height: auto;
-	}
-	#bbpress-forums div.bbp-the-content-wrapper td.mceToolbar {
-		padding: 1px;
-	}
-	#bbpress-forums div.bbp-the-content-wrapper td.mceToolbar td {
-		width: 20px;
-		height: 20px;
-	}
-	#bbpress-forums div.wp-editor-container {
-		width: 100%;
-		overflow: auto;
-	}
-	#bbpress-forums input#bbp_topic_title,
-	#bbpress-forums input#bbp_topic_tags {
-		width: 95%;
-	}
-}
-
-/* =Extra Small Mobile
--------------------------------------------------------------- */
-@media only screen and (max-width: 240px) {
-	#bbpress-forums li.bbp-header li.bbp-forum-topic-count,
-	#bbpress-forums li.bbp-header li.bbp-forum-reply-count,
-	#bbpress-forums li.bbp-body li.bbp-forum-topic-count,
-	#bbpress-forums li.bbp-body li.bbp-forum-reply-count,
-	#bbpress-forums li.bbp-header li.bbp-topic-voice-count,
-	#bbpress-forums li.bbp-header li.bbp-topic-reply-count,
-	#bbpress-forums li.bbp-body li.bbp-topic-voice-count,
-	#bbpress-forums li.bbp-body li.bbp-topic-reply-count,
-	#bbpress-forums li.bbp-footer div.bbp-reply-author,
-	#bbpress-forums li.bbp-footer div.bbp-reply-content {
-		width: 45%;
-	}
-	#bbpress-forums li.bbp-header li.bbp-forum-freshness,
-	#bbpress-forums li.bbp-body li.bbp-forum-freshness,
-	#bbpress-forums li.bbp-header li.bbp-topic-freshness,
-	#bbpress-forums li.bbp-body li.bbp-topic-freshness,
-	#bbpress-forums li.bbp-header div.bbp-reply-author,
-	#bbpress-forums li.bbp-header div.bbp-reply-content {
-		clear: both;
-		width: 100%;
-	}
-	#bbpress-forums li.bbp-header li.bbp-forum-freshness,
-	#bbpress-forums li.bbp-header li.bbp-topic-freshness {
-		text-align: center;
-	}
-	#bbpress-forums li.bbp-body li.bbp-topic-freshness,
-	#bbpress-forums li.bbp-header div.bbp-reply-content {
-		margin-left: 0;
-		text-align: left;
-	}
-	#bbpress-forums li.bbp-body li.bbp-topic-freshness p.bbp-topic-meta {
-		display: inline-block;
-	}
-	#bbpress-forums li.bbp-header {
-		overflow: hidden;
-	}
-	#bbpress-forums li.bbp-footer div.bbp-reply-content {
-		display: inline-block;
-		margin-left: 0;
-	}
-	#bbpress-forums li.bbp-body div.bbp-reply-author {
-		min-height: 60px;
-		padding-left: 60px;
-	}
-	#bbpress-forums div.bbp-reply-author img.avatar {
-		width: 40px;
-		height: auto;
-	}
-}
-
 
 /* 追加分
 -------------------------------------------------------------- */
@@ -1454,6 +1396,18 @@ body.my-account #bbpress-forums {
 	border: 2px solid #999999;
 	border-radius: 8px;
 	background-color: #FFF;
+}
+/* 各デザイス */
+@media (min-width: 1200px) {
+}
+@media (max-width: 1199px) and (min-width: 992px) {
+}
+@media (max-width: 991px) and (min-width: 768px) {
+}
+@media (max-width: 767px) {
+#bbp-container {
+	margin: 15px 10px 0;
+}
 }
 #bbp-new-topic,
 #bbp-content.reply-wrap {
@@ -1502,6 +1456,18 @@ fieldset.bbp-form > legend {
 .back-to-top {
 	width: 458px;
 	margin: 0 auto 45px;
+}
+/* 各デザイス */
+@media (min-width: 1200px) {
+}
+@media (max-width: 1199px) and (min-width: 992px) {
+}
+@media (max-width: 991px) and (min-width: 768px) {
+}
+@media (max-width: 767px) {
+.back-to-top {
+	width: 70%;
+}
 }
 .back-to-top a {
 	display: block;
