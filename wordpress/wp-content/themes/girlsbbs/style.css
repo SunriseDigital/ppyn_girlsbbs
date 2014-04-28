@@ -227,7 +227,23 @@ h1
 	font-size: 22px;
 	color: #ffc9c9;
 }
-
+/* 各デザイス */
+@media (min-width: 1200px) {
+}
+@media (max-width: 1199px) and (min-width: 992px) {
+}
+@media (max-width: 991px) and (min-width: 768px) {
+}
+@media (max-width: 767px) {
+.entry-title {
+	padding: 8px 8px 8px 35px;
+	font-size: 16px;
+	background-position: 8px 50%;
+	-webkit-background-size: 23px 18px;
+	-moz-background-size: 23px 18px;
+	background-size: 23px 18px;
+}
+}
 #bbpress-forums ul.bbp-topics {
 	border-radius: 6px;
 }

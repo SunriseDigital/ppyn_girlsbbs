@@ -8,7 +8,7 @@
 					<a href="<?php bloginfo('url'); ?>" class="footer_blog_title"><?php bloginfo('name'); ?></a>
 					<ul class="footer_menu">
 						<li><a href="mailto:&#105;&#110;&#102;&#111;&#64;&#103;&#111;&#115;&#115;&#105;&#112;&#101;&#114;&#45;&#98;&#98;&#115;&#46;&#99;&#111;&#109;">&#12362;&#21839;&#12356;&#21512;&#12431;&#12379;</a></li>
-						<li><a href="DUMMY">利用規約</a></li>
+						<li><a href="http://gossiper-bbs.com/?page_id=113">利用規約</a></li>
 					</ul>
 					<?php dynamic_sidebar( 'footer-widget' ); ?>
 					<p class="copy">
