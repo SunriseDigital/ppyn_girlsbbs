@@ -1445,6 +1445,9 @@ body.my-account #bbpress-forums {
 @media (max-width: 1199px) and (min-width: 992px) {
 }
 @media (max-width: 991px) and (min-width: 768px) {
+#bbp-container {
+	margin: 15px 10px 0;
+}
 }
 @media (max-width: 767px) {
 #bbp-container {
@@ -1490,7 +1493,7 @@ fieldset.bbp-form > legend {
 	background-color: #f7f7f7;
 }
 .bbp-reply-content p {
-	margin: 0;
+	margin: 0 0 10px;
 }
 .bbp-reply-author br {
 	display: none;
