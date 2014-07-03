@@ -7,5 +7,479 @@ Author: ppyn
 Author URI: xxx
 */
 
+/************************
+reset
+************************/
+body {
+	font-family:Helvetica, Arial, 'Hiragino Kaku Gothic ProN', 'ヒラギノ角ゴ ProN W3', Meiryo, メイリオ, sans-serif;
+	font-size: 13px;
+	margin: 0;
+	background: #fff0f0;
+	color: #666666;
+}
 
+ul {
+	padding: 0;
+	list-style: none;
+}
 
+a {
+	text-decoration: none;
+}
+
+/************************
+header
+************************/
+#header {
+	border-top: 10px solid #ff7b81;
+	background-color: #333333;
+}
+/* 各デザイス */
+@media (min-width: 1200px) {
+}
+@media (max-width: 1199px) and (min-width: 992px) {
+}
+@media (max-width: 991px) and (min-width: 768px) {
+}
+@media (max-width: 767px) {
+#header {
+	border-width: 5px;
+}
+}
+.header-wrap {
+	position: relative;
+	margin: 0 auto;
+	padding: 10px 0 0;
+	max-width: 950px;
+}
+/* 各デザイス */
+@media (min-width: 1200px) {
+}
+@media (max-width: 1199px) and (min-width: 992px) {
+}
+@media (max-width: 991px) and (min-width: 768px) {
+}
+@media (max-width: 767px) {
+.header-wrap {
+	padding: 5px 0 0;
+	text-align: center;
+}
+}
+.blog_title {
+	display: block;
+	width: 458px;
+	height: 57px;
+	background: url(/wordpress/wp-content/themes/girlsbbs/img/com_logo01.png) 0 0 no-repeat;
+	text-indent: -9999px;
+}
+/* 各デザイス */
+@media (min-width: 1200px) {
+}
+@media (max-width: 1199px) and (min-width: 992px) {
+}
+@media (max-width: 991px) and (min-width: 768px) {
+.blog_title {
+	width: 100%;
+	margin: 0 auto;
+	background-position: 50% 0;
+	-webkit-background-size: auto 100%;
+	-moz-background-size: auto 100%;
+	background-size: auto 100%;
+}
+}
+@media (max-width: 767px) {
+.blog_title {
+	width: 100%;
+	height: 35px;
+	margin: 0 auto;
+	background-position: 50% 0;
+	-webkit-background-size: auto 100%;
+	-moz-background-size: auto 100%;
+	background-size: auto 100%;
+}
+}
+/* searchBox */
+#searchBox {
+	position: relative;
+	max-width: 950px;
+	margin: 15px auto 0;
+}
+#searchBox form {
+	position: absolute;
+	top: -67px;
+	right: 0;
+	border: 1px solid #cccccc;
+	background-color: #ffffff;
+	border-radius: 25px;
+}
+/* 各デザイス */
+@media (min-width: 1200px) {
+}
+@media (max-width: 1199px) and (min-width: 992px) {
+}
+@media (max-width: 991px) and (min-width: 768px) {
+#searchBox {
+	max-width: 550px;
+}
+#searchBox form {
+	position: relative;
+	top: 0;
+	right: 0;
+	margin: 0 10px;
+}
+}
+@media (max-width: 767px) {
+#searchBox {
+	max-width: 550px;
+}
+#searchBox form {
+	position: relative;
+	top: 0;
+	right: 0;
+	margin: 0 10px;
+}
+}
+#searchBox form div {
+	padding: 0 15px 0 23px;
+}
+#searchBox form div .hidden {
+	display: none;
+}
+#searchBox form #bbp_search_submit {
+	float: right;
+	display: block;
+	width: 23px;
+	height: 33px;
+	margin: 0;
+	padding: 0;
+	border: none;
+	background: url(/wordpress/wp-content/themes/girlsbbs/img/com_bt01.png) 0 50% no-repeat;
+	text-indent: -9999px;
+	cursor: pointer;
+}
+#searchBox form #bbp_search {
+	float: left;
+	width: 310px;
+	margin: 0;
+	padding: 9px 0;
+	border: 1px solid #ffffff;
+}
+/* 各デザイス */
+@media (min-width: 1200px) {
+}
+@media (max-width: 1199px) and (min-width: 992px) {
+}
+@media (max-width: 991px) and (min-width: 768px) {
+}
+@media (max-width: 767px) {
+#searchBox form #bbp_search {
+	width: 80%;
+}
+}
+/* entryBox */
+#entryBox {
+	max-width: 550px;
+	margin: 15px auto 0;
+}
+#entryBox .create-topic {
+	margin: 0 10px;
+	background-color: #ff739a;
+	border-radius: 25px;
+}
+#entryBox .create-topic a {
+	display: block;
+	padding: 10px;
+	color: #ffffff;
+	font-weight: bold;
+	font-size: 20px;
+	text-align:center;
+}
+@media (min-width: 1200px) {
+}
+@media (max-width: 1199px) and (min-width: 992px) {
+}
+@media (max-width: 991px) and (min-width: 768px) {
+}
+@media (max-width: 767px) {
+#entryBox .create-topic a {
+	font-size: 14px;
+}
+}
+#entryBox .create-topic a:before {
+	content: "";
+	padding: 0 12px 0 12px;
+	background: url(/wordpress/wp-content/themes/girlsbbs/img/com_ic01.png) 50% 50% no-repeat;
+}
+#entryBox .create-topic a:after {
+	content: "";
+	padding: 0 12px 0 12px;
+	background: url(/wordpress/wp-content/themes/girlsbbs/img/com_ic01.png) 50% 50% no-repeat;
+}
+/*フォーラムしか置かないので表示させない*/
+.menu {
+	display: none;
+}
+
+.menu > ul {
+	display: -webkit-box;
+	display: -moz-box;
+	display: box;
+}
+
+.menu > ul li {
+	-webkit-box-flex: 1;
+	-moz-box-flex: 1;
+	box-flex: 1;
+	width: 100%;
+	padding: 10px;
+	border: 1px solid #FFF;
+}
+
+/************************
+h1
+************************/
+.entry-title {
+	margin: 0 0 15px;
+	padding: 15px 15px 15px 58px;
+	background: url(/wordpress/wp-content/themes/girlsbbs/img/com_ic02.png) 14px 50% no-repeat #666666;
+	border-radius: 6px 6px 0 0;
+	line-height: 1.1;
+	font-size: 22px;
+	color: #ffc9c9;
+}
+/* 各デザイス */
+@media (min-width: 1200px) {
+}
+@media (max-width: 1199px) and (min-width: 992px) {
+}
+@media (max-width: 991px) and (min-width: 768px) {
+}
+@media (max-width: 767px) {
+.entry-title {
+	padding: 8px 8px 8px 35px;
+	font-size: 16px;
+	background-position: 8px 50%;
+	-webkit-background-size: 23px 18px;
+	-moz-background-size: 23px 18px;
+	background-size: 23px 18px;
+}
+}
+#bbpress-forums ul.bbp-topics {
+	border-radius: 6px;
+}
+/************************
+footer
+************************/
+#footer-pagetop {
+	width: 950px;
+	margin: 0 auto;
+	text-align: right;
+}
+/* 各デザイス */
+@media (min-width: 1200px) {
+}
+@media (max-width: 1199px) and (min-width: 992px) {
+}
+@media (max-width: 991px) and (min-width: 768px) {
+#footer-pagetop {
+	width: auto;
+	margin: 0 10px;
+}
+}
+@media (max-width: 767px) {
+#footer-pagetop {
+	width: auto;
+	margin: 0 10px;
+}
+}
+#footer-pagetop a {
+	display: inline-block;
+	padding: 10px 15px 10px 39px;
+	border-bottom: 2px dotted #ff9db8;
+	border-radius: 4px 4px 0 0;
+	background: url(/wordpress/wp-content/themes/girlsbbs/img/com_ic03.png) 19px 50% no-repeat #ff739a;
+	line-height: 1.1;
+	font-size: 15px;
+	font-weight: bold;
+	color: #ffffff;
+}
+/* 各デザイス */
+@media (min-width: 1200px) {
+}
+@media (max-width: 1199px) and (min-width: 992px) {
+}
+@media (max-width: 991px) and (min-width: 768px) {
+}
+@media (max-width: 767px) {
+#footer-pagetop a {
+	padding: 10px 15px 10px 30px;
+	font-size: 12px;
+	background-position: 12px 50%;
+	-webkit-background-size: auto 12px;
+	-moz-background-size: auto 12px;
+	background-size: auto 12px;
+}
+}
+#footer {
+	padding: 25px 0 10px;
+	border-bottom: 10px solid #333333;
+	background-color: #ff739a;
+}
+/* 各デザイス */
+@media (min-width: 1200px) {
+}
+@media (max-width: 1199px) and (min-width: 992px) {
+}
+@media (max-width: 991px) and (min-width: 768px) {
+}
+@media (max-width: 767px) {
+#footer {
+	padding: 10px 0 10px;
+	border-bottom-width: 5px;
+}
+}
+.footer-wrap {
+	width: 950px;
+	margin: 0 auto;
+}
+/* 各デザイス */
+@media (min-width: 1200px) {
+}
+@media (max-width: 1199px) and (min-width: 992px) {
+}
+@media (max-width: 991px) and (min-width: 768px) {
+.footer-wrap {
+	width: auto;
+	margin: 0 10px;
+}
+}
+@media (max-width: 767px) {
+.footer-wrap {
+	width: auto;
+	margin: 0 10px;
+}
+}
+.footer_blog_title {
+	display: block;
+	width: 195px;
+	height: 48px;
+	background: url(/wordpress/wp-content/themes/girlsbbs/img/com_logo02.png) 0 0 no-repeat;
+	text-indent: -9999px;
+}
+/* 各デザイス */
+@media (min-width: 1200px) {
+}
+@media (max-width: 1199px) and (min-width: 992px) {
+}
+@media (max-width: 991px) and (min-width: 768px) {
+}
+@media (max-width: 767px) {
+.footer_blog_title {
+	width: auto;
+	height: 24px;
+	background-position: 50% 0;
+	-webkit-background-size: auto 24px;
+	-moz-background-size: auto 24px;
+	background-size: auto 24px;
+}
+}
+.footer_menu {
+	float: left;
+	margin: 10px 0 0;
+}
+/* 各デザイス */
+@media (min-width: 1200px) {
+}
+@media (max-width: 1199px) and (min-width: 992px) {
+}
+@media (max-width: 991px) and (min-width: 768px) {
+}
+@media (max-width: 767px) {
+.footer_menu {
+	float: none;
+	width: auto;
+	margin: 5px 0 0;
+	text-align: center;
+}
+}
+.footer_menu li {
+	float: left;
+	margin-right: 7px;
+	padding-right: 7px;
+	border-right: 1px solid #ffffff;
+	line-height: 1.1;
+}
+/* 各デザイス */
+@media (min-width: 1200px) {
+}
+@media (max-width: 1199px) and (min-width: 992px) {
+}
+@media (max-width: 991px) and (min-width: 768px) {
+}
+@media (max-width: 767px) {
+.footer_menu li {
+	display: inline-block;
+	float: none;
+	font-size: 10px;
+}
+}
+.footer_menu li:last-child {
+	margin-right: 0;
+	padding-right: 0;
+	border-right: none;
+}
+.footer_menu li a {
+	color: #ffffff;
+}
+.copy {
+	float: right;
+	line-height: 1.1;
+	margin: 10px 0 0;
+	color: #333333;
+}
+/* 各デザイス */
+@media (min-width: 1200px) {
+}
+@media (max-width: 1199px) and (min-width: 992px) {
+}
+@media (max-width: 991px) and (min-width: 768px) {
+}
+@media (max-width: 767px) {
+.copy {
+	float: none;
+	font-size: 10px;
+	text-align: center;
+}
+}
+.copy a {
+	color: #333333;
+	text-decoration: underline;
+}
+/* =========================================================
+	Clearfix
+========================================================= */
+.footer_menu:after,
+.footer-wrap:after,
+#searchBox form div:after {
+	display: block;
+	clear: both;
+	height: 0;
+	visibility: hidden;
+	content: ".";
+	font-size: 0;
+	line-height: 0;
+}
+
+.footer_menu,
+.footer-wrap,
+#searchBox form div {
+	display:block;
+	zoom:1;
+}
+
+/* for IE7 */
+*:first-child+html .footer_menu,
+*:first-child+html .footer-wrap,
+*:first-child+html #searchBox form div {
+	display:inline-table;
+}

@@ -96,7 +96,7 @@ class BBP_Default extends BBP_Theme_Compat {
 	public function before_main_content() {
 	?>
 
-		<div id="bbp-container">
+		<div id="bbp-container" class="gossiper-wrap">
 			<div id="bbp-content" role="main">
 
 	<?php
