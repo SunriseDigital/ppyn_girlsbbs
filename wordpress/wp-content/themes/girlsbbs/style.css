@@ -309,7 +309,7 @@ page-footer-banner
 @media (max-width: 767px) {
 	.page-footer-banner .forSP {
 		display: block;
-		width: 100%;
+		max-width: 100%;
 	}
 }
 
