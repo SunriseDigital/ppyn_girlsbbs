@@ -46,6 +46,7 @@ wp_enqueue_script('jquery', 'http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/
                <div id="searchBox">
                	<?php bbp_get_template_part( 'form', 'search' ); ?>
                </div><!-- /#searchBox -->
+               <p class="page-header-banner"><a href="http://www.ppyn.com" target="_blank" onclick="_gaq.push('send', 'event', 'banner-test', '【PR】求人数2,000件超！あなたの条件にマッチする仕事がココにある♪');">【PR】求人数2,000件超！あなたの条件にマッチする仕事がココにある♪</a></p>
                <div id="entryBox">
                           <?php if (!array_key_exists(topic, $_GET) && $_GET["page_id"] != 60): //トピック単体・トピック作成ページはリンクなしにしてます。?>
                            <p class="create-topic">

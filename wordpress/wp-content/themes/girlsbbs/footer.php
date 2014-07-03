@@ -1,6 +1,6 @@
 				<br class="clear">
 			</div><!-- /#contents -->
-			
+			<p class="page-footer-banner"><a onclick="_gaq.push('send', 'event', 'banner-image', '高収入求人パピヨンジョブ');" target="_blank" href="http://www.ppyn.com"><img alt="ホントに毎回お給料3万円貰えると思っていませんでした！" src="/wordpress/wp-content/themes/girlsbbs/img/ppyn-banner-pc.gif" class="forPC"><img alt="ホントに毎回お給料3万円貰えると思っていませんでした！" src="/wordpress/wp-content/themes/girlsbbs/img/ppyn-banner-sp.gif" class="forSP"></a></p>
 <!-- Footer -->
 			<p id="footer-pagetop"><a href="#header">&#12371;&#12398;&#12506;&#12540;&#12472;&#12398;&#20808;&#38957;&#12408;</a></p>
 			<div id="footer">

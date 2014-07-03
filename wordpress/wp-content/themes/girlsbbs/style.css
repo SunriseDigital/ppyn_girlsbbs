@@ -176,6 +176,17 @@ header
 	width: 80%;
 }
 }
+
+/************************
+page-header-banner
+************************/
+.page-header-banner {
+	text-align: center;
+}
+
+
+
+
 /* entryBox */
 #entryBox {
 	max-width: 550px;
@@ -267,6 +278,41 @@ h1
 #bbpress-forums ul.bbp-topics {
 	border-radius: 6px;
 }
+/************************
+page-footer-banner
+************************/
+.page-footer-banner {
+	text-align: center;
+	margin: 10px 10px 35px;
+}
+.page-footer-banner .forPC,
+.page-footer-banner .forSP {
+	display: none;
+	margin: 0 auto;
+}
+/* 各デザイス */
+@media (min-width: 1200px) {
+	.page-footer-banner .forPC {
+		display: block;
+	}
+}
+@media (max-width: 1199px) and (min-width: 992px) {
+	.page-footer-banner .forPC {
+		display: block;
+	}
+}
+@media (max-width: 991px) and (min-width: 768px) {
+	.page-footer-banner .forPC {
+		display: block;
+	}
+}
+@media (max-width: 767px) {
+	.page-footer-banner .forSP {
+		display: block;
+		width: 100%;
+	}
+}
+
 /************************
 footer
 ************************/
